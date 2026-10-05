@@ -61,7 +61,7 @@ public class InternalFilter : IPositionedPipelineElement<IDeviceReport>
 
     public PipelinePosition Position => PipelinePosition.Internal;
 
-    [Property("Pressure Threshold"), DefaultPropertyValue(1), Unit("%")]
+    [Property("Pressure Threshold"), DefaultPropertyValue(1u), Unit("%")]
     public uint PressureThreshold { set; get; }
 
     [Property("Rewrite Pressure"), DefaultPropertyValue(-1)]
